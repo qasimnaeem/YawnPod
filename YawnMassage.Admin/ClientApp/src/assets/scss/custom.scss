@@ -1,0 +1,150 @@
+@import "variables.scss";
+
+.form-group.required label:after {
+     content:"*";
+}
+
+.page-fill-content {
+    margin-bottom: 0rem;
+
+    &.content-scroll {
+        overflow: auto;
+    }
+}
+
+.side-panes-container {
+    height: calc(100vh);
+}
+
+.side-left-pane {
+    background-color: #007087;
+}
+
+.offset-label {
+    position: relative;
+    left: -10px;
+}
+
+.k-dialog {
+    font-size: inherit;
+}
+
+.k-grid {
+
+    font-size: inherit;
+
+    td.k-state-selected, th.k-state-selected, tr.k-state-selected {
+        &:hover {
+            background-color: rgba(0,123,255,.25);
+        }
+    }
+
+    th, td {
+        padding: 0.55rem;
+    }
+
+    .k-master-row td {
+        cursor: pointer;
+    }
+
+    .disabled-row {
+        color: lightgray !important;
+     
+    }
+
+    .non-selectable-row td   {
+        cursor: default;
+    }
+
+    .checkbox-grid-column {
+        text-overflow: clip;
+    }
+}
+
+.k-datetimepicker {
+    width: auto;
+
+    .k-icon.k-i-calendar, .k-icon.k-i-clock {
+        width: 30px;
+        height: 36px;
+        padding-top: 10px;
+    }
+}
+
+.k-animation-container {
+    z-index: 10005;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+  }
+/*===MISC============================*/
+.yawnlogo {
+    color: $logo-yellow-color;
+    font-size: 32px;
+    font-family: $font-ubunto;
+}
+.title-text {
+    font-family: $font-ubunto;
+    font-size: 18px;
+    color: $text-color;
+}
+.remarks {
+    font-family: $font-ubunto;
+    font-size: 12px;
+    color: $remarks-color !important;
+}
+.login-fieldset
+{
+    margin: 0 auto;
+    width: 275px;
+    margin-top: 55px;
+}
+/*===INPUT===========================*/
+.text-style {
+    width: 286px;
+    height: 32px;
+    padding: 9px 0px 9px 12px;
+    border-radius: 4px;
+    font-family: $font-ubunto;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(215, 218, 226, 1);
+    background-color: white !important;
+}
+.check-style {
+    width: 20.02px;
+    height: 18px;
+    color: $check-box-color;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 132, 149, 1);
+    margin: 2px 0 0 0;
+}
+.check-label {
+    font-family: $font-source-sans;
+    font-size: 15px;
+    color: $text-color;
+    margin-left: 10px;
+}
+.forget-password-label {
+    font-family: $font-source-sans;
+    font-size: 15px;
+    color: $text-color;
+}
+.login-button {
+    background-color: $login-button-bgcolor !important;
+    color: $login-button-color;
+    width: 185px;
+    height: 50px;
+    font-family: $font-source-sans;
+    font-size: 18px;
+}
+.resend-button {
+    background-color: white !important;
+    color: black !important;
+    width: 185px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 1) !important;
+    font-family: $font-source-sans;
+    font-size: 18px;
+}

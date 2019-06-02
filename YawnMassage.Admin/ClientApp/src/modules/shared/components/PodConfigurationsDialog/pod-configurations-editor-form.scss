@@ -1,0 +1,38 @@
+.pod-configurations-editor-form {
+    .pod-configurations-scroller {
+        max-height: 350px;
+        overflow: auto;
+        padding: 0.5rem 1rem 0.5rem 0rem;
+    }
+
+    .column-header-row {
+        padding: 5px;
+        background-color: #e6eaf0;
+    }
+
+    .new-button-row {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: right;
+    }
+
+    .key-entry-row {
+        padding-left: 20px;
+    }
+
+    .configuration-entry-row {
+        margin-top: 10px;
+    }
+
+    .key-title-row, .remark-error-row {
+        padding-left: 25px;
+    }
+
+    .delete-icon-row {
+        padding-top: 5px;
+    }
+
+    .delete-icon {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,99 @@
+@import "variables.scss";
+
+.sidebar {
+    width: $sidebar-expanded-width;
+   
+
+    .sidebar-logo {
+        height: 61px;
+    }
+
+    .sidebar-link {
+        color: white;
+    }
+    .nav-item:hover, .nav-item.active {
+        background-color: $sidebar-hover-bgcolor
+    }
+
+    .dropdown-menu {
+        background-color: $sidebar-bgcolor;
+
+        a {
+            color: white;
+            padding: 0.5rem;
+            white-space: nowrap;
+            display: block;
+
+            &:hover, &.active {
+                background-color: $sidebar-hover-bgcolor;
+            }
+        }
+    }
+}
+
+.header {
+    width: calc(100% - #{$sidebar-expanded-width});
+}
+
+.page-container {
+    padding-left: $sidebar-expanded-width;
+}
+
+.sidebar-menu {
+    background-color: $sidebar-bgcolor;
+}
+.sidebar-menu > li {
+    background-color: black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.is-collapsed {
+    .sidebar .sidebar-inner .sidebar-logo {
+        border-bottom: 1px solid transparent;
+        padding: 0
+    }
+
+    .sidebar-menu > li {
+        margin-right: 0px;
+    }
+
+    .sidebar .sidebar-inner .sidebar-menu > li > a .title {
+        display: none
+    }
+
+    .sidebar .sidebar-inner .sidebar-menu li.dropdown .arrow {
+        opacity: 0
+    }
+
+    .sidebar .sidebar-inner .sidebar-menu li.dropdown.open ul.dropdown-menu {
+        display: none !important
+    }
+
+    .sidebar {
+        width: $sidebar-collapsed-width;
+    }
+
+    .header {
+        width: calc(100% - #{$sidebar-collapsed-width});
+    }
+
+    .page-container {
+        padding-left: $sidebar-collapsed-width;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar .sidebar-inner .sidebar-logo{border-bottom:1px solid transparent;padding:0} .sidebar .sidebar-inner .sidebar-menu>li>a .title{display:none} .sidebar .sidebar-inner .sidebar-menu li.dropdown .arrow{opacity:0} .sidebar .sidebar-inner .sidebar-menu li.dropdown.open ul.dropdown-menu{display:none!important}
+
+    .sidebar {
+        width: $sidebar-collapsed-width;
+    }
+
+    .header {
+        width: calc(100% - #{$sidebar-collapsed-width});
+    }
+
+    .page-container {
+        padding-left: $sidebar-collapsed-width;
+    }
+}

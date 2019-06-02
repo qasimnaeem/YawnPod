@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.header {
+    height: auto;
+    box-shadow: 0 8px 6px -6px #b3b3b3;
+
+    .header-container {
+        
+        .nav-left > li > a, .nav-right > li > a {
+            min-height: 60px;
+            line-height: 60px;
+        }
+    }
+
+    .breadcrumb {
+        line-height: 16px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+        
+    .header-top-row {
+        border-bottom: 1px solid rgba(0,0,0,.0625);
+    }
+}
+
+.main-content {
+    padding: 110px 20px 10px;
+    background-color: $sidebar-bgcolor !important;
+}
+
+
+.btn {
+    cursor: pointer;
+}
+
+.card {
+    margin-bottom: 1rem;
+
+    &.compact .card-body {
+        padding: 0.85rem;
+    }
+}
+
+.app-rendering-spinner {
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:calc(50% - 20px);
+    left:calc(50% - 20px);
+    background-color:#333;
+    border-radius:100%;
+    -webkit-animation:sk-scaleout 1s infinite ease-in-out;animation:sk-scaleout 1s infinite ease-in-out
+}
