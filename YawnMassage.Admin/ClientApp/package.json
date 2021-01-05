@@ -17,7 +17,7 @@
     "@progress/kendo-theme-bootstrap": "2.13.8",
     "@progress/kendo-ui": "2018.3.1003",
     "@progress/kendo-upload-react-wrapper": "^2018.3.1017",
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "bootstrap": "4.1.3",
     "history": "4.7.2",
     "jquery": "3.3.1",
